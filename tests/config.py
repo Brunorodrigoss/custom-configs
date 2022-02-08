@@ -3,8 +3,8 @@ class Config:
         
         SUPPORTED_ENVS = ['dev', 'qa']
 
-#        if env.lower() not in SUPPORTED_ENVS:
-#            raise Exception(f'{env} is not supported environment (supported envs: {SUPPORTED_ENVS})')
+        if env.lower() not in SUPPORTED_ENVS:
+            raise Exception(f'{env} is not supported environment (supported envs: {SUPPORTED_ENVS})')
         
         self.base_url = {
             'dev': 'https://mydev-env.com',
